@@ -105,7 +105,8 @@ ol[class] {
   list-style: none;
 }
 
-ul {
+ul,
+li {
   list-style: none;
 }
 
@@ -321,6 +322,37 @@ body {
 }
 
 .card__info-link {
+  display: flex;
+  align-items: center;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.01em;
+  text-decoration-line: underline;
+  color: #252525;
+  margin-bottom: 5px;
+}
+
+.card__info-item:nth-child(3) .card__info-link {
+  margin-bottom: 0px;
+}
+
+.card__info-item:nth-child(1) .card__info-link {
+  font-size: 14px;
+}
+
+.card__info-img {
+  /* уточнить размеры и переделать */
+  width: 26px;
+  height: 20px;
+  padding-right: 11px;
+}
+
+.card__info-item:nth-child(3) .card__info-img {
+  width: 27px;
 }
 
 .card__img-box {
@@ -338,9 +370,6 @@ body {
 
 .card__contacts {
   padding-left: 26px;
-}
-
-.contacts {
 }
 
 .contacts__top {
@@ -388,6 +417,13 @@ body {
 }
 
 .contacts__city-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.01em;
+  color: #252525;
 }
 
 .contacts__city-link {
@@ -404,4 +440,77 @@ body {
   background-position: center center;
   background-image: url(/img/play.svg);
   margin-right: 4px;
+}
+
+/* Main ....... */
+.main {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+
+.main__iner {
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background: #252525;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+}
+.main-search {
+  padding: 7.52px 9.52px 6.52px 10.52px;
+  background: #ffcc00;
+  display: block;
+
+}
+.search_link {
+}
+.search-img {
+}
+.main__menu {
+  display: flex;
+  align-items: center;
+  /* column-gap: 36px; */
+}
+.menu {
+}
+.menu-item_main{
+
+}
+.menu-link_main {
+  display: inline-block;
+  padding: 9px 19px;
+  transition: all 0.15s ease-in;
+
+}
+
+.menu-link_main:hover {
+  background: #ffcc00;
+  color: #000000;
+}
+
+.active {
+  background: #ffcc00;
+  color: #000000;
+}
+
+.main__sale {
+  background: #ffcc00;
+  padding: 9px 15px 9px 14px;
+  border-radius: 0px 10px 10px 0px;
+}
+.sale-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
 }
